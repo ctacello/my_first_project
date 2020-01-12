@@ -1,8 +1,32 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
+.main-section {
+    display: flex;
+    justify-content: space-between;
+}
+ul li {
+    font-size: 25px;
+    color: black;
+}
+.main-article_title {
+    font-size: 60px;
+    margin-bottom: 50px;
+}
+.main-article_item {
+    font-size: 14px;
+    color: white;
+    margin-bottom: 10px;
+}
+.main-article_item::before {
+    content: url(../assets/check_icon.png);
+}
+.main-article_white {
+    color: white;
+}
 .profile { 
-    width: 1280;
+    width: 1280px;
+    display: block;
     margin: 0 auto;
 }
 .section {
@@ -11,25 +35,9 @@ body {
 .section_black {
     background-color: #445162;
 }
-.main-section {
-    display: flex;
-    justify-content: space-between;
-
-}
 .section_img {
     width: 40%;
 }
-.main-arcticle_title {
-    font-size: 60px;
-    margin-bottom: 50px;
-}
 .main-arctile_list  {
     font-size: 20;
-}
-.main-arcticle_white {
-    color: white;
-}
-.main-arcticle_item::before {
-    margin-bottom: 10;
-    content: url('../assets/chech_icon.png');git 
 }
