@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.profile { 
+    width: 1280;
+    margin: 0 auto;
+}
+.section {
+    padding: 50px;
+}
+.section_black {
+    background-color: #445162;
+}
+.main-section {
+    display: flex;
+    justify-content: space-between;
+
+}
+.section_img {
+    width: 40%;
+}
+.main-arcticle_title {
+    font-size: 60px;
+    margin-bottom: 50px;
+}
+.main-arctile_list  {
+    font-size: 20;
+}
+.main-arcticle_white {
+    color: white;
+}
+.main-arcticle_item::before {
+    margin-bottom: 10;
+    content: url('../assets/chech_icon.png');git 
+}
