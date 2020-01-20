@@ -1,0 +1,370 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.profile {
+  width: 1280px;
+  display: block;
+  margin: 0 auto;
+}
+
+.footer {
+  text-align: center;
+  background-color: white;
+  margin: 10px auto;
+}
+
+.section {
+  padding: 50px;
+}
+
+.section_blue {
+  background-color: #445162;
+}
+
+.section_white {
+  background-color: white;
+}
+
+.section_gray {
+  background-color: #f5f5f5;
+}
+
+.main-section_product-name {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.main-section_about-your-product {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.section__img {
+  width: 40%;
+  margin-left: 85px;
+}
+
+.main-article_white {
+  color: white;
+}
+
+.main-article_blue {
+  color: #445161;
+}
+
+.main-article__title {
+  font-size: 60px;
+  margin-bottom: 50px;
+}
+
+.main-article-h2__title {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.main-article-h2_center {
+  text-align: center;
+}
+
+.main-article__text {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.main-artiсle__list {
+  font-size: 20px;
+}
+
+.main-article__list_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.main-article__item {
+  font-size: 20px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.main-article__item::before {
+  margin-right: 10px;
+  content: url(../assets/check_icon.png);
+}
+
+.main-article__item_wrap {
+  flex-basis: 30%;
+}
+
+.main-article__item_wrap2 {
+  flex-basis: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.main-article__item2 {
+  font-size: 16px;
+  line-height: 24px;
+  padding-right: 20px;
+  margin-bottom: 30px;
+}
+
+.main-article__item2::before {
+  content: url(../assets/plus_icon.png);
+  padding-right: 10px;
+  padding-bottom: 90px;
+}
+
+.main-article__item3 {
+  margin-bottom: 30px;
+}
+
+.main-article__item3-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.main-article__item3-block_flex {
+  flex-basis: 45%;
+  position: relative;
+  width: 100%;
+  margin: auto;
+  top: 1px;
+  left: 1px;
+}
+
+.main-article__item3-block-img {
+  width: 40%;
+}
+
+.main-article__item3-block-text {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-article_text-description-title {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.main-article_text-description-text {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+
+.main-article-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.main-article-div__text {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  font-size: 14px;
+}
+
+.main-article-div__text_text-name {
+  color: #989898;
+  margin-top: 10px;
+}
+
+.main-article-div__text_bg {
+  background-image: url(../assets/quote_bg.png);
+  background-repeat: no-repeat;
+  padding: 20px;
+}
+
+.main-article-div__text-in-bg-image {
+  margin: 1px;
+}
+
+.main-article-div__img {
+  margin-right: 16px;
+}
+
+.main-article-div__text_flex {
+  flex-basis: 50%;
+}
+
+.article-screenshot-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  position: relative;
+}
+
+.article-buyitnow-block {
+  justify-content: center;
+}
+
+.main-article-buyitnow__collums {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 300px;
+  flex: 0 0 250px;
+  align-items: flex-end;
+}
+
+.main-article-buyitnow__collum {
+  background-color: #445162;
+  margin: 22px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.main-article-buyitnow__collum-text-head {
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  margin: 17px 105px;
+}
+
+.main-article-buyitnow__collum-text-price {
+  background-color: white;
+  text-align: center;
+  font-size: 40px;
+  padding: 17px 105px;
+  border: solid #445162;
+}
+
+.main-article-buyitnow__collum-text-list {
+  color: white;
+  line-height: 24px;
+  list-style: decimal;
+}
+
+.main-article-buyitnow__collum-text-list_show {
+  list-style: decimal;
+  padding: 0 20px;
+  font-size: 14px;
+}
+
+.main-article-buyitnow__collum-text-item {
+  margin: 10px;
+}
+
+.main-article-buyitnow__collum-text-button {
+  padding: 14px 115px;
+  margin: 20px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.main-section-contacts__block {
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-section-contacts__input-block {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.main-section-contacts__input {
+  margin-bottom: 20px;
+}
+
+.main-section-contacts__input_height {
+  height: 40px;
+  width: 500px;
+  border-radius: 10px;
+}
+
+.main-section-contacts__input_width {
+  height: 170px;
+  width: 500px;
+  border-radius: 10px;
+}
+
+.main-section-contacts__button {
+  height: 40px;
+  width: 140px;
+  border-radius: 10px;
+}
+
+.main-section-contacts__input_button-center {
+  margin: auto;
+}
+
+.main-section-contacts-info {
+  display: flex;
+  flex-flow: column;
+}
+
+.main-section-contacts-info__item {
+  margin-bottom: 30px;
+}
+
+.main-section-contacts-info__item__img {
+  margin-right: 5px;
+}
+
+/*# sourceMappingURL=app.css.map */
