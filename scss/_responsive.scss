@@ -1,5 +1,146 @@
 @charset 'utf-8';
 
+@media only screen and (max-width: 640px) {
+    
+    .article__title {
+        margin-bottom: 15px;
+    }
+
+    .product {
+        flex-flow: column;
+    }
+
+    .about {
+        flex-flow: column;
+    }
+
+    .dignity-article__item {
+        flex-basis: 45%;
+    }
+
+    .screenshot-article__item_wrap {
+        flex-basis: 100%;
+    }
+
+    .contacts-article__block {
+        align-items: end;
+    }
+
+    .contacts-input__field {
+        width: 300px !important;
+        
+        &_small {
+            height: 20px !important;
+        }
+
+        &_big {
+            height: 65px !important;  
+        }
+    }
+
+    .contacts-info__item {
+        margin-bottom: 15px !important;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    
+    h1 {
+        font-size: 40px;
+    }
+
+    .product-article__title {
+        margin-bottom: 25px;
+    }
+    
+    .reviews-block__item {
+        flex-basis: 48%;
+    }
+
+    .reviews-article__block {
+        flex-flow: column;
+    }
+
+    .buytinow-article__collums {
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .buytinow-collums__collum {
+        margin: 10px 0px !important;
+    }
+
+    .contacts-block__info {
+        margin-left: 15px !important;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    
+    .product {
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .about {
+        flex-flow: column;
+        align-items: center;
+
+        &-article {
+            align-items: center;
+            display: flex;
+            flex-flow: column;
+        }
+    }
+
+    .dignity-article__item {
+        flex-basis: 45%;
+    }
+
+    .screenshot-article__item_wrap {
+        flex-basis: 100%;
+    }
+
+    .buytinow-collums__collum {
+        margin: 0px 5px;
+    }
+
+    .contacts-input__field {
+        width: 400px !important;
+    }
+}
+
+@media only screen and (max-width: 1281px) {
+    
+    .profile {
+        width: 100%;
+    }
+
+    .footer {
+        width: 100%;
+    }
+
+    .section {
+        padding: 25px;
+    }
+
+    .buytinow-collums__collum {
+        margin: 0px 5px;
+    }
+
+}
+
+@media only screen and (min-width: 1281px) {
+    
+    .profile {
+        width: 1280px;
+    }
+
+    .footer {
+        width: 1280px;
+    }
+}
+
 @media only screen and (max-width: 480px) {
     
     .footer {
@@ -12,7 +153,7 @@
 
     .product {
         flex-flow: column;
-        
+
         &__img {
             margin: auto;
             width: 100%;
@@ -48,7 +189,7 @@
 
     .screenshots-block__text {
         flex-flow: column;
-        flex-basis: 0% !important;
+        flex-basis: 100%;
     }
 
     .screenshots-block__img {
@@ -57,7 +198,7 @@
 
     .reviews-block__item {
 
-        flex-basis: 0;
+        flex-basis: 100%;
         display: flex;
         flex-flow: column;
         align-items: center;
@@ -97,79 +238,4 @@
         margin-left: 0px !important;
         margin-top: 10px;
     }
-}
-
-@media only screen and (max-width: 640px) {
-    
-}
-
-@media only screen and (max-width: 960px) {
-    
-    h1 {
-        font-size: 40px;
-    }
-
-    .product-article__title {
-        margin-bottom: 25px;
-    }
-    
-    .reviews-block__item {
-        flex-basis: 48%;
-    }
-
-    .reviews-article__block {
-        flex-flow: column;
-    }
-
-    .buytinow-article__collums {
-        flex-flow: column;
-        align-items: center;
-    }
-
-    .buytinow-collums__collum {
-        margin: 10px 0px !important;
-    }
-
-    .contacts-block__info {
-        margin-left: 15px !important;
-    }
-}
-
-@media only screen and (max-width: 1024px) {
-    
-    .buytinow-collums__collum {
-        margin: 0px 5px;
-    }
-}
-
-@media only screen and (max-width: 1281px) {
-    
-    .profile {
-        width: 100%;
-    }
-
-    .footer {
-        width: 100%;
-    }
-
-    .section {
-        padding: 25px;
-    }
-
-    .buytinow-collums__collum {
-        margin: 0px 5px;
-    }
-
-}
-
-@media only screen and (min-width: 1281px) {
-    
-    .profile {
-        width: 1280px;
-    }
-
-    .footer {
-        width: 1280px;
-    }
-
 }
