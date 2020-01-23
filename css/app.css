@@ -314,54 +314,51 @@ h3 {
   justify-content: center;
   align-items: baseline;
 }
-.contacts-article__block .contacts-block__input {
+
+.contacts-block__input {
   display: flex;
   flex-flow: column;
   justify-content: center;
 }
-.contacts-article__block .contacts-block__input .contacts-input__field {
+
+.contacts-input__field {
   margin-bottom: 20px;
   padding-left: 10px;
   border-radius: 10px;
   width: 500px;
 }
-.contacts-article__block .contacts-block__input .contacts-input__field_small {
+.contacts-input__field_small {
   height: 40px;
 }
-.contacts-article__block .contacts-block__input .contacts-input__field_big {
+.contacts-input__field_big {
   height: 170px;
 }
-.contacts-article__block .contacts-block__input .contacts-input__button {
+
+.contacts-input__button {
   height: 40px;
   width: 140px;
   border-radius: 10px;
   margin: auto;
   font-weight: bold;
 }
-.contacts-article__block .contacts-block__info {
+
+.contacts-block__info {
   display: flex;
   flex-flow: column;
   margin-left: 45px;
 }
-.contacts-article__block .contacts-block__info .contacts-info__item {
+
+.contacts-info__item {
   margin-bottom: 30px;
   display: flex;
   align-items: center;
 }
-.contacts-article__block .contacts-block__info .contacts-info__item .contacts-item__img {
+
+.contacts-item__img {
   margin-right: 5px;
 }
 
 /* Contacts styles end */
-@media only screen and (min-width: 1281px) {
-  .profile {
-    width: 1280px;
-  }
-
-  .footer {
-    width: 1280px;
-  }
-}
 @media only screen and (max-width: 1280px) {
   .profile {
     width: 100%;
@@ -571,6 +568,15 @@ h3 {
   .contacts-block__info {
     margin-left: 0px;
     margin-top: 10px;
+  }
+}
+@media only screen and (min-width: 1281px) {
+  .profile {
+    width: 1280px;
+  }
+
+  .footer {
+    width: 1280px;
   }
 }
 
