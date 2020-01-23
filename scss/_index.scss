@@ -1,0 +1,342 @@
+@charset 'utf-8';
+
+@import 'variables';
+@import 'mixins';
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 30px;
+    line-height: 36px
+}
+
+h3 {
+    font-size: 24px;
+}
+
+.profile { 
+    width: $page-width;
+    display: block;
+    margin: 0 auto;
+}
+
+.footer {
+    width: $page-width;
+    text-align: center;
+    background-color: $white-color;
+    margin: 10px auto;
+}
+
+.section {
+    padding: 50px;
+}
+
+.section_blue {
+    background-color: $blue-color;
+}
+
+.section_white {
+    background-color: $white-color;
+}
+
+.section_gray {
+    background-color: $gray-color;
+}
+
+.article__title {
+    margin-bottom: $title-mrg-bot;
+}
+
+.article__title_center {
+    text-align: center;
+}
+
+.article_white {
+    color: $white-color;
+}
+
+.article_blue {
+    color: $blue-color;
+}
+
+/* Product styles */
+.product {
+    @include flex_flow;
+
+    &-article {
+
+        &__title {
+            margin-bottom: 50px;
+        }
+        
+        &__list {
+            font-size: 20px;
+            
+            
+        }
+
+        &__item {
+            margin-bottom: 10px;
+            
+            &::before {
+                margin-right: 10px;
+                content: url(../assets/check_icon.png);
+            }
+        }
+
+    }
+
+    &__img {
+        margin-left: 15px;
+    }
+}   
+
+/* Product styles end */
+
+/* About styles */
+.about {
+    @include flex_flow;
+
+    &-article {
+
+        &__title {
+            margin-bottom: $title-mrg-bot;
+        }
+
+        &__text {
+            font-size: 16px;
+            line-height: 24px;
+            padding-bottom: 20px;
+        }
+    }
+
+    &__img {
+        margin-left: 15px;
+    }
+}
+
+/* About styles end */
+
+/* Dignity styles */
+
+.dignity-article__list {
+    @include flex_wrap;
+}
+
+.dignity-article__item {
+    font-size: 16px;
+    line-height: 24px;
+    padding-right: 20px;
+    margin-bottom: 30px;
+    flex-basis: 30%;
+    &::before {
+        content: url(../assets/plus_icon.png);
+        padding-right: 10px;
+    }
+}
+
+/* Dignity styles end */
+
+/* Screenshots styles */
+
+.screenshots-article__list_wrap {
+    @include flex_wrap;
+}
+
+.screenshots-article__item {
+    margin-bottom: 30px;
+}
+
+.screenshots-item__block_wrap {
+    @include flex_wrap (flex, wrap, space-around);
+    
+    .screenshots-block__img {
+        width: auto;
+        flex-basis: auto;
+        margin: 0px;
+    }
+    
+    .screenshots-block__text {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 16px;
+        line-height: 24px;
+        flex-basis: 63%;
+        position: relative;
+        width: 100%;
+        margin: auto;   
+        top: 1px;
+        left: 1px;
+
+        .screenshots-block__title {
+            margin-bottom: 16px;
+        }
+        
+        .screenshots-text {
+            
+        }
+    }
+}
+    
+.screenshot-article__item_wrap {
+    @include flex-wrap;
+    flex-basis: 50%;
+}
+
+
+/* Screenshots styles end */
+
+/* Reviews end */
+
+.reviews-article {
+    @include flex_wrap (flex, wrap, space-around);
+    position: relative;
+    
+    &__block {
+       @include flex_wrap;
+       font-size: 14px;
+       
+       .reviews-block__item {
+           flex-basis: 49%;
+           display: flex;
+           justify-content: space-between;
+           margin-bottom: 24px;
+           font-size: 14px;
+
+           .reviews-item__img {
+               margin-right: 16px;
+            }
+           
+            .reviews-item_bg {
+               background-image: url(../assets/quote_bg.png);
+               background-size: cover;
+               background-repeat: no-repeat;
+               padding: 20px;
+
+               .reviews-item__text {
+                    padding-left: 30px;
+
+               }
+
+               .reviews-item__name {
+                   color: #989898;
+                   margin-top: 10px;
+                   padding-left: 30px;
+               }
+            }
+       }
+    }
+}
+
+/* Reviews styles end */
+
+/*  Buy it now styles */
+
+.buytinow-article__collums {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+
+}
+
+.buytinow-collums__collum {
+    @include flex_flow (flex, column, center);
+    background-color: #445162;
+    margin: 22px;
+    border-radius: 10px;
+    
+    .buyitnow-collum__head {
+        color: $white-color;
+        text-align: center;
+        font-size: 24px;
+        margin: 17px 105px;
+    }
+    
+    .buyitnow-collum__price {
+        background-color: $white-color;
+        text-align: center;
+        font-size: 40px;
+        padding: 17px 105px;
+        border: solid $blue-color;
+    }
+    
+    .buyitnow-collum__list {
+        color: $white-color;
+        line-height: 24px;
+        list-style: decimal;
+        padding: 0 20px;
+        font-size: 14px;
+
+        .buyitnow-list__item {
+            margin: 10px;
+        }
+    }
+            
+    .buyitnow-collum__button {
+        padding: 14px 115px;
+        margin: 20px;
+        font-weight: bold;
+        font-size: 18px;
+        border-radius: 10px;
+    }
+}
+
+/*  Buy it now styles end */
+
+/* Contacts styles */
+
+.contacts-article__block {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+
+    .contacts-block__input {
+        @include flex-flow (flex, column, center);
+        
+        .contacts-input__field {
+            margin-bottom: 20px;
+            padding-left: 10px;
+            border-radius: $radius;
+            width: 500px;
+
+            &_small {
+                height: 40px;
+            }
+            
+            &_big {
+                height: 170px;  
+            }
+        }
+
+        .contacts-input__button {
+            height: 40px;
+            width: 140px;
+            border-radius: $radius;
+            margin: auto;
+        }
+                  
+    }
+    .contacts-block__info {
+        display: flex;
+        flex-flow: column;
+        margin-left: 45px;
+
+        .contacts-info__item {
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+
+            .contacts-item__img {
+                margin-right: 5px;
+            }
+        }
+    }
+}
+
+/* Contacts styles end */

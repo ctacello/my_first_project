@@ -1,0 +1,11 @@
+@mixin flex_flow ($display: flex, $flex-flow: row, $justify-content: space-between) {
+    display: $display;
+    flex-flow: $flex-flow; 
+    justify-content: $justify-content;
+}
+
+@mixin flex_wrap ($display: flex, $flex-wrap: wrap, $justify-content: space-between) {
+    display: $display;
+    flex-wrap: $flex-wrap;
+    justify-content: $justify-content;
+}
