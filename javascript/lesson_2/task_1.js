@@ -2,6 +2,20 @@
 // b - 2е значение
 // c - шаг диапазона
 
+// условие 1
+function range1(a, b) {
+    let arr = [];
+
+    for (let i = a; i <= b; i++) {
+        arr.push(i);
+    }
+    return arr;
+}
+
+console.log(range1(1, 10));
+console.log(' ');
+
+// условие 2 и 3
 function range(a, b, c) {
     if (c == null) c = 1;
     
