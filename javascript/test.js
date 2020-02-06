@@ -1,17 +1,31 @@
-function isEven(x) {
-    // if (x < 0) {
-    //     x *= -1;
-    // }
-    if (x == 0) {
-        return true;
+// a - 1е значение
+// b - 2е значение
+// c - шаг диапазона
+
+function range(a, b, c) {
+  if (c == null) c = 1;
+  
+  let arr = [];
+
+  if (c > 0) {
+    for (let i = a; i <= b; i += c) {
+      arr.push(i);
     }
-    if (x == 1) {
-        return false;
+  } else {
+    for (let i = a; i >= b; i += c) {
+      arr.push(i);
     }
-    return isEven(x - 2);
+  }
+  return arr;  
 }
 
-console.log(isEven(50));
-console.log(isEven(75));
-console.log(isEven(-1));
-console.log(isEven(-4));
+function sum(arr) {
+  let j = 0;
+  for (let i = 0; i < arr.length; i++) {
+    j += arr[i];
+  }
+  return j;
+}
+
+console.log(sum(range(1,100)));
+console.log(range(10, 1, -2));
