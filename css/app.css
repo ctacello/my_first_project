@@ -193,12 +193,14 @@ h3 {
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.screenshots-item__block_wrap .screenshots-block__img {
+
+.screenshots-block__img {
   width: auto;
   flex-basis: auto;
   margin: 0px;
 }
-.screenshots-item__block_wrap .screenshots-block__text {
+
+.screenshots-block__text {
   display: flex;
   flex-wrap: wrap;
   font-size: 16px;
@@ -210,7 +212,8 @@ h3 {
   top: 1px;
   left: 1px;
 }
-.screenshots-item__block_wrap .screenshots-block__text .screenshots-block__title {
+
+.screenshots-block__title {
   margin-bottom: 16px;
 }
 
@@ -235,26 +238,31 @@ h3 {
   justify-content: space-between;
   font-size: 14px;
 }
-.reviews-article__block .reviews-block__item {
+
+.reviews-block__item {
   flex-basis: 49%;
   display: flex;
   justify-content: space-between;
   margin-bottom: 24px;
   font-size: 14px;
 }
-.reviews-article__block .reviews-block__item .reviews-item__img {
+
+.reviews-item__img {
   margin-right: 16px;
 }
-.reviews-article__block .reviews-block__item .reviews-item_bg {
+
+.reviews-item_bg {
   background-image: url(../assets/quote_bg.png);
   background-size: cover;
   background-repeat: no-repeat;
   padding: 20px;
 }
-.reviews-article__block .reviews-block__item .reviews-item_bg .reviews-item__text {
+
+.reviews-item__text {
   padding-left: 30px;
 }
-.reviews-article__block .reviews-block__item .reviews-item_bg .reviews-item__name {
+
+.reviews-item__name {
   color: #989898;
   margin-top: 10px;
   padding-left: 30px;
@@ -276,30 +284,35 @@ h3 {
   margin: 22px;
   border-radius: 10px;
 }
-.buytinow-collums__collum .buyitnow-collum__head {
+
+.buyitnow-collum__head {
   color: white;
   text-align: center;
   font-size: 24px;
   margin: 17px 105px;
 }
-.buytinow-collums__collum .buyitnow-collum__price {
+
+.buyitnow-collum__price {
   background-color: white;
   text-align: center;
   font-size: 40px;
   padding: 17px 105px;
   border: solid #445161;
 }
-.buytinow-collums__collum .buyitnow-collum__list {
+
+.buyitnow-collum__list {
   color: white;
   line-height: 24px;
   list-style: decimal;
   padding: 0 20px;
   font-size: 14px;
 }
-.buytinow-collums__collum .buyitnow-collum__list .buyitnow-list__item {
+
+.buyitnow-list__item {
   margin: 10px;
 }
-.buytinow-collums__collum .buyitnow-collum__button {
+
+.buyitnow-collum__button {
   padding: 14px 115px;
   margin: 20px;
   font-weight: bold;

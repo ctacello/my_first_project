@@ -155,36 +155,33 @@ h3 {
 
 .screenshots-item__block_wrap {
     @include flex_wrap (flex, wrap, space-around);
-    
-    .screenshots-block__img {
-        width: auto;
-        flex-basis: auto;
-        margin: 0px;
-    }
-    
-    .screenshots-block__text {
-        display: flex;
-        flex-wrap: wrap;
-        font-size: 16px;
-        line-height: 24px;
-        flex-basis: 63%;
-        position: relative;
-        width: 100%;
-        margin: auto;   
-        top: 1px;
-        left: 1px;
+}
+.screenshots-block__img {
+    width: auto;
+    flex-basis: auto;
+    margin: 0px;
+}
 
-        .screenshots-block__title {
-            margin-bottom: 16px;
-        }
-    }
+.screenshots-block__text {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 16px;
+    line-height: 24px;
+    flex-basis: 63%;
+    position: relative;
+    width: 100%;
+    margin: auto;   
+    top: 1px;
+    left: 1px;
+}
+.screenshots-block__title {
+    margin-bottom: 16px;
 }
     
 .screenshot-article__item_wrap {
     @include flex-wrap;
     flex-basis: 50%;
 }
-
 
 /* Screenshots styles end */
 
@@ -197,37 +194,33 @@ h3 {
     &__block {
        @include flex_wrap;
        font-size: 14px;
-       
-       .reviews-block__item {
-           flex-basis: 49%;
-           display: flex;
-           justify-content: space-between;
-           margin-bottom: 24px;
-           font-size: 14px;
-
-           .reviews-item__img {
-               margin-right: 16px;
-            }
-           
-            .reviews-item_bg {
-               background-image: url(../assets/quote_bg.png);
-               background-size: cover;
-               background-repeat: no-repeat;
-               padding: 20px;
-
-               .reviews-item__text {
-                    padding-left: 30px;
-
-               }
-
-               .reviews-item__name {
-                   color: #989898;
-                   margin-top: 10px;
-                   padding-left: 30px;
-               }
-            }
-       }
     }
+}
+.reviews-block__item {
+    flex-basis: 49%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    font-size: 14px;
+
+}
+.reviews-item__img {
+    margin-right: 16px;
+}
+
+ .reviews-item_bg {
+    background-image: url(../assets/quote_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+.reviews-item__text {
+     padding-left: 30px;
+}
+.reviews-item__name {
+    color: #989898;
+    margin-top: 10px;
+    padding-left: 30px;
 }
 
 /* Reviews styles end */
@@ -247,40 +240,39 @@ h3 {
     margin: 22px;
     border-radius: 10px;
     
-    .buyitnow-collum__head {
-        color: $white-color;
-        text-align: center;
-        font-size: 24px;
-        margin: 17px 105px;
-    }
-    
-    .buyitnow-collum__price {
-        background-color: $white-color;
-        text-align: center;
-        font-size: 40px;
-        padding: 17px 105px;
-        border: solid $blue-color;
-    }
-    
-    .buyitnow-collum__list {
-        color: $white-color;
-        line-height: 24px;
-        list-style: decimal;
-        padding: 0 20px;
-        font-size: 14px;
+}
+.buyitnow-collum__head {
+    color: $white-color;
+    text-align: center;
+    font-size: 24px;
+    margin: 17px 105px;
+}
 
-        .buyitnow-list__item {
-            margin: 10px;
-        }
-    }
-            
-    .buyitnow-collum__button {
-        padding: 14px 115px;
-        margin: 20px;
-        font-weight: bold;
-        font-size: 18px;
-        border-radius: 10px;
-    }
+.buyitnow-collum__price {
+    background-color: $white-color;
+    text-align: center;
+    font-size: 40px;
+    padding: 17px 105px;
+    border: solid $blue-color;
+}
+
+.buyitnow-collum__list {
+    color: $white-color;
+    line-height: 24px;
+    list-style: decimal;
+    padding: 0 20px;
+    font-size: 14px;
+}
+.buyitnow-list__item {
+    margin: 10px;
+}
+        
+.buyitnow-collum__button {
+    padding: 14px 115px;
+    margin: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 10px;
 }
 
 /*  Buy it now styles end */
