@@ -6,6 +6,7 @@
   "dependencies": {
     "clean-webpack-plugin": "^3.0.0",
     "html-webpack-plugin": "^3.2.0",
+    "sass": "^1.25.0",
     "webpack": "^4.41.6"
   },
   "devDependencies": {
@@ -16,8 +17,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack --mode development ./src/index.js --output ./dist/main.js --watch",
-    "prod": "webpack --mode production"
+    "dev": "webpack --mode development --config webpack.dev.js ./javascript/lesson_4/src/index2.js --output ./javascript/lesson_4/dist/index2.js --watch",
+    "prod": "webpack --mode production --config webpack.prod.js ./javascript/lesson_4/src/index2.js --output ./javascript/lesson_4/dist/index2.js"
   },
   "repository": {
     "type": "git",
