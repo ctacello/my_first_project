@@ -1,21 +1,3 @@
-// let footer = document.createElement('footer');
-// let section = document.createElement('section');
-// let article = document.createElement('article');
-// let div = document.createElement('div');
-
-// let h1 = document.createElement('h1');
-// let h2 = document.createElement('h2');
-// let h3 = document.createElement('h3');
-
-// let ul = document.createElement('ul');
-// let ol = document.createElement('ol');
-// let li = document.createElement('li');
-
-// let button = document.createElement('button');
-// let input = document.createElement('input');
-// let img = document.createElement('img');
-// let p = document.createElement('p');
-
 // 0. Body
 
 let footer = document.createElement('footer');
@@ -405,59 +387,12 @@ let sectionContacts = document.querySelector('.contacts');
                     liContactsTexts.forEach(function(liContactsText){
                         let liContacts = document.createElement('li');
                         liContacts.className = 'contacts-info__item';
-                        // liContacts.innerText = '"'+liContactsText+'"';
                         liContacts.innerHTML = '<img class="contacts-item__img" src="assets/'+liContactsText+'_icon.png" alt="'+liContactsText+'">'+liContactsText+'';
                         ulContacts.appendChild(liContacts);
-                            // let imgLiContacts = document.createElement('img');
-                            // imgLiContacts.className = 'contacts-item__img';
-                            // imgLiContacts.src = 'assets/'+liContactsText+'_icon.png';
-                            // imgLiContacts.alt = liContactsText;
-                            // liContacts.appendChild(imgLiContacts);
                     });
 
                 let imgContacts = document.createElement('img');
                 imgContacts.src = 'assets/social_buttons.png';
                 imgContacts.alt = 'Social buttons';
                 divContactsBlockInfo.appendChild(imgContacts);
-
-// let sectionArticles = ['Product name', 
-//                         'About your product', 
-//                         'Dignity and pluses product',
-//                         'Screenshots',
-//                         'Reviews',
-//                         'Buy it now',
-//                         'Contacts'
-//                         ];
-
-// let articleClassNames = ['product-article article_white',
-//                             'about-article article_blue',
-//                             'article_blue',
-//                             'article_blue',
-//                             'reviews-article article_blue',
-//                             'article_blue',
-//                             'article_white'
-//                         ];
-    
-
-// через массив, попытка
-
-// let element = document.getElementsByClassName('section');
-// let parent = document.getElementsByTagName('section');
-// let elementArray = Array.from(element);
-// console.log(parent);
-// console.log(main.childNodes);
-
-// main.childNodes.forEach(function(){
-//     let article = document.createElement('article');
-//     main.children.appendChild(article);
-//     // console.log(articleClassName);
-// });
-
-// // articleCreate;
-// let articleCreate = main.forEach(function(articleClassName){
-//         let article = document.createElement('article');
-//         section.appendChild(article);
-//         article.className = articleClassName;
-// });
-
             

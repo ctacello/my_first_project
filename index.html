@@ -8,14 +8,23 @@
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/app.css.map">
 </head>
-<body>
+<body class="body_hide body-top" id="top">
 
     <main class="profile">
-
+            <section class="anchors">
+                <!-- <a id="top"></a> -->
+                <div><a class="anchor" href="#product">Product name</a></div>
+                <div><a class="anchor" href="#about">About your product</a></div>
+                <div><a class="anchor" href="#dignity">Dignity and pluses product</a></div>
+                <div><a class="anchor" href="#screenshots">Sreenshots</a></div>
+                <div><a class="anchor" href="#reviews">Reviews</a></div>
+                <div><a class="anchor" href="#buyitnow">Buy it now</a></div>
+                <div><a class="anchor" href="#contacts">Contacts</a></div>
+            </section>
         <!-- 1. Product name -->
             <section class="section product section_blue">
                 <article class="product-article article_white">
-                    <h1 class="product-article__title">Product name</h1>
+                    <h1 class="product-article__title" id="product">Product name</h1>
                     <ul class="product-article__list">
                         <li class="product-article__item">Put on this page information about your product</li>
                         <li class="product-article__item">A detailed description of your product</li>
@@ -25,21 +34,43 @@
                 </article>
                 <div><img class="product__img" src="assets/white_square.png" alt="White square"></div>
             </section>
-
+            <div class="product-buttons section_blue">
+                <button class="product-buttons__button button_hide">Скрыть блок</button>
+                <button class="product-buttons__button button_show">Показать блок</button>
+            </div>
+            <div class="gotop_center">
+                <button class="gotop" onclick="window.location.href='#top'">Go top</button>
+            </div>
         <!-- 2. About your product -->
             <section class="section about section_white">
                 <article class="about-article article_blue">
-                    <h2 class="about-article__title">About your product</h2>
+                    <h2 class="about-article__title" id="about">About your product</h2>
                     <p class="about-article__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facilis fuga, illo at. Natus eos, eligendi illum rerum omnis porro ex, magni, explicabo veniam incidunt in quam sapiente ut ipsum.</p>
                     <p class="about-article__text">Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.</p>
                 </article>
-                <div><img class="about__img" src="assets/blue_square.png" alt="Blue square"></div>
+                <div class="about-slider section_blue">
+                    <div class="about-slider__name">Ecosol 60</div>
+                    <div class="about-slider__list">
+                        <img class="about-slider__img showed" src="assets/slider/design60_1.jpg" alt="Ecosol 60">
+                        <img class="about-slider__img" src="assets/slider/ecosol70_2.jpg" alt="Ecosol 70">
+                        <img class="about-slider__img" src="assets/slider/korsa70_3.jpg" alt="Korsa 70">
+                        <img class="about-slider__img" src="assets/slider/brillant_4.jpg" alt="Brilliant 70">
+                        <img class="about-slider__img" src="assets/slider/geneo_5.jpg" alt="Geneo">
+                    </div>
+                    <div class="about-buttons section_blue">
+                        <button class="about-buttons__button button_prev"><< Prev</button>
+                        <button class="about-buttons__button button_next">Next >></button>
+                    </div>
+                </div>
             </section>
-        
+            <div class="gotop_center">
+                <button class="gotop" onclick="window.location.href='#top'">Go top</button>
+            </div>
+
         <!-- 3. Dignity and pluses product -->
             <section class="section dignity section_gray">
                 <article class="article_blue">
-                    <h2 class="article__title article__title_center"> Dignity and pluses product</h2>
+                    <h2 class="article__title article__title_center" id="dignity"> Dignity and pluses product</h2>
                     <!-- Заменить на блок -->
                     <ul class="dignity-article__list">
                         <li class="dignity-article__item">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.</li>
@@ -51,11 +82,14 @@
                     </ul>
                 </article>
             </section>
+            <div class="gotop_center">
+                <button class="gotop" onclick="window.location.href='#top'">Go top</button>
+            </div>
         
         <!-- 4. Sreenshots -->
             <section class="section screenshots section_white">
                 <article class="article_blue">
-                    <h2 class="article__title article__title_center">Screenshots</h2>
+                    <h2 class="article__title article__title_center" id="screenshots">Screenshots</h2>
                     <ul class="screenshots-article__list_wrap">
                         <li class="screenshots-article__item screenshot-article__item_wrap">
                             <div class="screenshots-item__block_wrap">
@@ -104,11 +138,14 @@
                     </ul>
                 </article>
             </section>
+            <div class="gotop_center">
+                <button class="gotop" onclick="window.location.href='#top'">Go top</button>
+            </div>
 
         <!-- 5. Reviews -->
             <section class="section reviews section_gray">
                 <article class="reviews-article article_blue">
-                    <h2 class="article__title article__title_center">Reviews</h2>
+                    <h2 class="article__title article__title_center" id="reviews">Reviews</h2>
                     <div class="reviews-article__block">
                         <div class="reviews-block__item">
                             <div>
@@ -165,11 +202,14 @@
                     </div>
                 </article>
             </section>
+            <div class="gotop_center">
+                <button class="gotop" onclick="window.location.href='#top'">Go top</button>
+            </div>
 
         <!-- 6. Buy it now -->
             <section class="section buyitnow section_white">
                 <article class="article_blue">
-                    <h2 class="article__title article__title_center">Buy it now</h2>
+                    <h2 class="article__title article__title_center" id="buyitnow">Buy it now</h2>
                     <div class="buytinow-article__collums">
                         <div class="buytinow-collums__collum">
                             <div class="buyitnow-collum__head">
@@ -237,11 +277,14 @@
                     </div>
                 </article>
             </section>
+            <div class="gotop_center">
+                <button class="gotop" onclick="window.location.href='#top'">Go top</button>
+            </div>
 
         <!-- 7. Contacts -->        
             <section class="section contacts section_blue">
                 <article class="article_white">
-                    <h2 class="article__title article__title_center">Contacts</h2>
+                    <h2 class="article__title article__title_center" id="contacts">Contacts</h2>
                     <div class="contacts-article__block">
                         <div class="contacts-block__input">
                             <input class="contacts-input__field contacts-input__field_small" name="Your name" placeholder="Ваше имя:">
@@ -261,11 +304,17 @@
                     </div>
                 </article>
             </section>
+            <div class="gotop_center">
+                <button class="gotop" onclick="window.location.href='#top'">Go top</button>
+            </div>
+
     </main>
 
     <footer class="footer">
         Copyright © 2014 Product name · PSD HTML CSS
     </footer>
-    
+
+    <a class="back2Top" title="Back to top" href="#top">➤</a>
+    <script src="./javascript/lesson_5/dynamics.js"></script>
 </body>
 </html>
