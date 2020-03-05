@@ -2,9 +2,7 @@
 
 // let body = document.body;
 // let time = setTimeout(function(){
-
 // }, 1);
-
 // body.addEventListener("load", time);
 
 (async () => {
@@ -61,27 +59,30 @@
     let url = 'https://votesystem.mobius.team/api/result/24';
     let response = await fetch(url);
     
-    let myResult = await response.json();
+    if (response.ok) {
+        let myResult = await response.json();
 
-    console.log(myResult.user);
+        console.log(myResult.user);
 
-    let buttonResult = document.querySelector('.getMyresult')
-    
-    buttonResult.addEventListener('click', function() {
+        let buttonResult = document.querySelector('.getMyresult')
         
-        let blockResult = document.querySelector('.myResult');
+        buttonResult.addEventListener('click', function() {
 
-        let h3 = document.createElement('h3');
-        h3.innerText = myResult.user.name;
-        blockResult.appendChild(h3);
+            let blockResult = document.querySelector('.myResult');
 
-        let result = document.createElement('p');
-        result.innerText = 'Тесты выполнены на: ' + myResult.user.result + '%';
-        blockResult.appendChild(result);
+            let h3 = document.createElement('h3');
+            h3.innerText = myResult.user.name;
+            blockResult.appendChild(h3);
 
-        alert(myResult.message);
-    });
-    
+            let result = document.createElement('p');
+            result.innerText = 'Тесты выполнены на: ' + myResult.user.result + '%';
+            blockResult.appendChild(result);
+
+            alert(myResult.message);
+        });
+    } else {
+        alert("HTTP-Error: " + response.status);
+    }
 })();
 
 //  цепочка запросов в одной фукнции
@@ -89,32 +90,47 @@
 //  с ткаими параметрами token. homework_done (boolean value)
 //  обработать ответы сервера, вставляя неправильные ID и отправлять неправильные поля в POST
 
-(async () => {
-    let url = 'https://votesystem.mobius.team/api/result/24/token';
-    let response = await fetch(url);
-    
-    let myToken = await response.json();
+let getToken = () => {
 
-    console.log(myToken);
+    fetch('https://votesystem.mobius.team/api/result/24/token')
+    .then(response => response.json()
+    ).then(myToken => {
+        alert(myToken.message);
+        console.log(myToken);
+        
+        let token = myToken.token;
+        console.log(token);
+        let formData = new FormData();
+        formData.append('token', token);
+        formData.append('homework_done', true);
+        
+        const url = 'https://votesystem.mobius.team/api/homework/update';
+        const sendData = {
+            method: 'POST',
+            body: formData
+        }
 
-    let buttonToken = document.querySelector('.getMyToken')
+        fetch(url, sendData)
+            .then(response => response.json())
+            .then(response => {console.log(response); alert(response);});
+
+            // let sendToken = () => {
+            //     fetch('https://votesystem.mobius.team/api/homework/update', {
+            //         method: 'POST',
+            //         body: formData
+            //     })
+            //     .then(response => response.json()
+            //     ).then(result => {
+            //         console.log(result.message);
+            //     });
+            // }
+            // sendToken()
+    });
+};
+
+//
+let buttonToken = document.querySelector('.getMyToken');
     
     buttonToken.addEventListener('click', function() {
-        
-        let blockToken = document.querySelector('.myToken');
-
-        let h3 = document.createElement('h3');
-        h3.innerText = "Мой текущий токен";
-        blockToken.appendChild(h3);
-
-        let token = document.createElement('p');
-        token.innerText = myToken.token;
-        blockToken.appendChild(token);
-
-        let tokenCopy = document.createElement('p');
-        tokenCopy.innerText = 'Скопируйте сгенерированный токен чтобы отправить POST запрос на сервер';
-        blockToken.appendChild(tokenCopy);
-
-        alert(myToken.message);
+        getToken();
     });
-})()
