@@ -5,15 +5,15 @@
 // }, 1);
 // body.addEventListener("load", time);
 
-(async () => {
+window.addEventListener('load', (async () => {
     let url = 'https://votesystem.mobius.team/api/tests';
     let response = await fetch(url);
     
     let allTests = await response.json();
 
     console.log(allTests);
-    // alert(allTests.message);
 
+    alert(allTests.message);
     // console.log(allTests.tests[0]);
     // console.log(allTests.tests[0].conditions);
 
@@ -51,7 +51,7 @@
                 olAnswers.appendChild(liAnswer);
             };
         };
-})();
+}));
 
 // мой процент выполнения по нажатию на кнопку
 
@@ -85,7 +85,7 @@
     }
 })();
 
-//  цепочка запросов в одной фукнции
+//  цепочка запросов в одной функции
 //  получить токен и использовать в формате FormData 
 //  с ткаими параметрами token. homework_done (boolean value)
 //  обработать ответы сервера, вставляя неправильные ID и отправлять неправильные поля в POST
@@ -102,7 +102,7 @@ let getToken = () => {
         console.log(token);
         let formData = new FormData();
         formData.append('token', token);
-        formData.append('homework_done', true);
+        // formData.append('homework_done', true);
         
         const url = 'https://votesystem.mobius.team/api/homework/update';
         const sendData = {
@@ -112,25 +112,48 @@ let getToken = () => {
 
         fetch(url, sendData)
             .then(response => response.json())
-            .then(response => {console.log(response); alert(response);});
-
-            // let sendToken = () => {
-            //     fetch('https://votesystem.mobius.team/api/homework/update', {
-            //         method: 'POST',
-            //         body: formData
-            //     })
-            //     .then(response => response.json()
-            //     ).then(result => {
-            //         console.log(result.message);
-            //     });
-            // }
-            // sendToken()
+            .then(response => {console.log(response); alert(response);})
+            .catch(error => {
+                alert(error.message);
+            })
     });
 };
 
-//
 let buttonToken = document.querySelector('.getMyToken');
     
     buttonToken.addEventListener('click', function() {
         getToken();
     });
+
+    let getError = () => {
+
+        fetch('https://votesystem.mobius.team/api/result/24/token')
+        .then(response => response.json()
+        ).then(myError => {
+            alert(myError.message);
+            console.log(myError);
+            
+            let error = myError.token;
+            console.log(error);
+            let formData = new FormData();
+            formData.append('token', 'asdafwqfq412414');
+            formData.append('homework_done', true);
+            
+            const url = 'https://votesystem.mobius.team/api/homework/update';
+            const sendData = {
+                method: 'POST',
+                body: formData
+            }
+    
+            fetch(url, sendData)
+                .then(response => response.json())
+                .then(response => {console.log(response.message); alert(response.message);});
+    
+        });
+    };
+    
+    let buttonError = document.querySelector('.getMyError');
+        
+        buttonError.addEventListener('click', function() {
+            getError();
+        });
