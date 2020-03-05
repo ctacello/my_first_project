@@ -102,7 +102,7 @@ let getToken = () => {
         console.log(token);
         let formData = new FormData();
         formData.append('token', token);
-        // formData.append('homework_done', true);
+        formData.append('homework_done', true);
         
         const url = 'https://votesystem.mobius.team/api/homework/update';
         const sendData = {
