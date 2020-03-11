@@ -1,0 +1,30 @@
+html {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    width: 1280px;
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+    margin: 0 auto;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tests {
+    flex-basis: 30%;
+}
+
+.myTest {
+    text-align: center;
+    flex-basis: 40%;
+}
