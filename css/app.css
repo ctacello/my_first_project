@@ -1,0 +1,583 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+.profile {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  margin: 10px auto;
+}
+
+.section {
+  padding: 50px;
+}
+
+.section_blue {
+  background-color: #445161;
+}
+
+.section_white {
+  background-color: white;
+}
+
+.section_gray {
+  background-color: #f5f5f5;
+}
+
+.article__title {
+  margin-bottom: 30px;
+}
+
+.article__title_center {
+  text-align: center;
+}
+
+.article_white {
+  color: white;
+}
+
+.article_blue {
+  color: #445161;
+}
+
+/* Product styles */
+.product {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+.product-article__title {
+  margin-bottom: 50px;
+}
+.product-article__list {
+  font-size: 20px;
+}
+.product-article__item {
+  margin-bottom: 10px;
+}
+.product-article__item::before {
+  margin-right: 10px;
+  content: url(../assets/check_icon.png);
+}
+.product__img {
+  margin-left: 15px;
+}
+
+/* Product styles end */
+/* About styles */
+.about {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+.about-article__title {
+  margin-bottom: 30px;
+}
+.about-article__text {
+  font-size: 16px;
+  line-height: 24px;
+  padding-bottom: 20px;
+}
+.about__img {
+  margin-left: 15px;
+}
+
+/* About styles end */
+/* Dignity styles */
+.dignity-article__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.dignity-article__item {
+  font-size: 16px;
+  line-height: 24px;
+  padding-right: 20px;
+  margin-bottom: 30px;
+  flex-basis: 30%;
+}
+.dignity-article__item::before {
+  content: url(../assets/plus_icon.png);
+  padding-right: 10px;
+}
+
+/* Dignity styles end */
+/* Screenshots styles */
+.screenshots-article__list_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.screenshots-article__item {
+  margin-bottom: 30px;
+}
+
+.screenshots-item__block_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.screenshots-item__block_wrap .screenshots-block__img {
+  width: auto;
+  flex-basis: auto;
+  margin: 0px;
+}
+.screenshots-item__block_wrap .screenshots-block__text {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 16px;
+  line-height: 24px;
+  flex-basis: 63%;
+  position: relative;
+  width: 100%;
+  margin: auto;
+  top: 1px;
+  left: 1px;
+}
+.screenshots-item__block_wrap .screenshots-block__text .screenshots-block__title {
+  margin-bottom: 16px;
+}
+
+.screenshot-article__item_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-basis: 50%;
+}
+
+/* Screenshots styles end */
+/* Reviews end */
+.reviews-article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  position: relative;
+}
+.reviews-article__block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 14px;
+}
+.reviews-article__block .reviews-block__item {
+  flex-basis: 49%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  font-size: 14px;
+}
+.reviews-article__block .reviews-block__item .reviews-item__img {
+  margin-right: 16px;
+}
+.reviews-article__block .reviews-block__item .reviews-item_bg {
+  background-image: url(../assets/quote_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20px;
+}
+.reviews-article__block .reviews-block__item .reviews-item_bg .reviews-item__text {
+  padding-left: 30px;
+}
+.reviews-article__block .reviews-block__item .reviews-item_bg .reviews-item__name {
+  color: #989898;
+  margin-top: 10px;
+  padding-left: 30px;
+}
+
+/* Reviews styles end */
+/*  Buy it now styles */
+.buytinow-article__collums {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.buytinow-collums__collum {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  background-color: #445162;
+  margin: 22px;
+  border-radius: 10px;
+}
+.buytinow-collums__collum .buyitnow-collum__head {
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  margin: 17px 105px;
+}
+.buytinow-collums__collum .buyitnow-collum__price {
+  background-color: white;
+  text-align: center;
+  font-size: 40px;
+  padding: 17px 105px;
+  border: solid #445161;
+}
+.buytinow-collums__collum .buyitnow-collum__list {
+  color: white;
+  line-height: 24px;
+  list-style: decimal;
+  padding: 0 20px;
+  font-size: 14px;
+}
+.buytinow-collums__collum .buyitnow-collum__list .buyitnow-list__item {
+  margin: 10px;
+}
+.buytinow-collums__collum .buyitnow-collum__button {
+  padding: 14px 115px;
+  margin: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+/*  Buy it now styles end */
+/* Contacts styles */
+.contacts-article__block {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.contacts-block__input {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.contacts-input__field {
+  margin-bottom: 20px;
+  padding-left: 10px;
+  border-radius: 10px;
+  width: 500px;
+}
+.contacts-input__field_small {
+  height: 40px;
+}
+.contacts-input__field_big {
+  height: 170px;
+}
+
+.contacts-input__button {
+  height: 40px;
+  width: 140px;
+  border-radius: 10px;
+  margin: auto;
+  font-weight: bold;
+}
+
+.contacts-block__info {
+  display: flex;
+  flex-flow: column;
+  margin-left: 45px;
+}
+
+.contacts-info__item {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.contacts-item__img {
+  margin-right: 5px;
+}
+
+/* Contacts styles end */
+@media only screen and (max-width: 1280px) {
+  .profile {
+    width: 100%;
+  }
+
+  .footer {
+    width: 100%;
+  }
+
+  .section {
+    padding: 25px;
+  }
+
+  .buytinow-collums__collum {
+    margin: 0px 5px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .product {
+    flex-flow: column;
+    align-items: center;
+  }
+
+  .about {
+    flex-flow: column;
+    align-items: center;
+  }
+  .about-article {
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+  }
+
+  .dignity-article__item {
+    flex-basis: 45%;
+  }
+
+  .screenshot-article__item_wrap {
+    flex-basis: 100%;
+  }
+
+  .buytinow-collums__collum {
+    margin: 0px 5px;
+  }
+
+  .contacts-input__field {
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 960px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  .product-article__title {
+    margin-bottom: 25px;
+  }
+
+  .reviews-block__item {
+    flex-basis: 48%;
+  }
+
+  .reviews-article__block {
+    flex-flow: column;
+  }
+
+  .buytinow-article__collums {
+    flex-flow: column;
+    align-items: center;
+  }
+
+  .buytinow-collums__collum {
+    margin: 10px 0px;
+  }
+
+  .contacts-block__info {
+    margin-left: 15px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .article__title {
+    margin-bottom: 15px;
+  }
+
+  .product {
+    flex-flow: column;
+  }
+
+  .about {
+    flex-flow: column;
+  }
+
+  .dignity-article__item {
+    flex-basis: 45%;
+  }
+
+  .screenshot-article__item_wrap {
+    flex-basis: 100%;
+  }
+
+  .contacts-article__block {
+    align-items: end;
+  }
+
+  .contacts-input__field {
+    width: 300px;
+  }
+  .contacts-input__field_small {
+    height: 20px;
+  }
+  .contacts-input__field_big {
+    height: 65px;
+  }
+
+  .contacts-info__item {
+    margin-bottom: 15px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .footer {
+    font-size: 14px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  .product {
+    flex-flow: column;
+  }
+  .product__img {
+    margin: auto;
+    width: 100%;
+  }
+
+  .about {
+    flex-flow: column;
+  }
+  .about__img {
+    margin: auto;
+    width: 100%;
+  }
+
+  .dignity-article__list {
+    flex-flow: column;
+  }
+
+  .screenshots-item__block_wrap {
+    flex-flow: column;
+    align-items: center;
+  }
+
+  .screenshots-article__list_wrap {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .screenshots-article__item {
+    margin: 10px;
+  }
+
+  .screenshots-block__text {
+    flex-flow: column;
+    flex-basis: 100%;
+  }
+
+  .screenshots-block__img {
+    margin-bottom: 10px;
+  }
+
+  .reviews-block__item {
+    flex-basis: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+
+  .reviews-item__img {
+    margin-bottom: 16px;
+  }
+
+  .reviews-item__text {
+    padding-left: 10px;
+  }
+
+  .reviews-item__name {
+    padding-left: 10px;
+  }
+
+  .contacts-article__block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+  }
+
+  .contacts-input__field {
+    width: 300px;
+  }
+  .contacts-input__field_small {
+    height: 20px;
+  }
+  .contacts-input__field_big {
+    height: 65px;
+  }
+
+  .contacts-block__info {
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+}
+@media only screen and (min-width: 1281px) {
+  .profile {
+    width: 1280px;
+  }
+
+  .footer {
+    width: 1280px;
+  }
+}
+
+/*# sourceMappingURL=app.css.map */
